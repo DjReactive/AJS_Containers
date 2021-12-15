@@ -1,1 +1,1 @@
-import Team from './app';
+import './app';
