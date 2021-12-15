@@ -1,4 +1,4 @@
-const gameClasses = ['Bowerman', 'Swordsman', 'Magician', 'Undead', 'Zombie', 'Daemon'];
+export const gameClasses = ['Bowerman', 'Swordsman', 'Magician', 'Undead', 'Zombie', 'Daemon'];
 
 export function SetSettings(prop, health, level, attack, defence) {
   prop.health = health;
