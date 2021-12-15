@@ -10,6 +10,13 @@
       "error",
       "LabeledStatement",
       "WithStatement"
+    ],
+    "no-param-reassign": [
+      "error",
+      { "props": false }
+    ],
+    "max-classes-per-file": [
+      "error", 10
     ]
   }
 }

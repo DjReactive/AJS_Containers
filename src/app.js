@@ -1,18 +1,19 @@
-export class Team {
+export default class Team {
   constructor() {
     this.members = new Set();
   }
 
-  add (character) {
-    if (!this.members.has(character)) this.members.add(character);
-    else throw new Error ("Такой персонаж уже имеется в команде");
+  add(character) {
+    if (this.members.has(character)) { throw new Error('Такой персонаж уже имеется в команде'); }
+
+    this.members.add(character);
   }
 
-  addAll (...objs) {
-    objs.forEach(obj => this.members.add(obj));
+  addAll(...objs) {
+    objs.forEach((obj) => this.members.add(obj));
   }
 
-  toArray () {
-    return [this.members];
+  toArray() {
+    return [...this.members];
   }
 }
